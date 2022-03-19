@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma de dos numeros</title>
+</head>
+<body>
+        <h1>SUMAR DOS NUMEROS</h1>
+        <p>Por favor, introduce dos numeros</p>
+        <input type="number" name="numero" id="num1" placeholder="numero 1" required>
+        <input type="number" name="numero" id="num2" placeholder="numero 2" required>
+        <input type="submit" value="enviar" onclick=resultado();>
+        <p id=sumando></p>
+
+            <script>
+                function resultado(){
+                    x=document.getElementById(num1).value();
+                    y=document.getElementById(num2).value();
+                        if(isNan(x) && isNan(y)){
+                            alert("Introduce numeros validos por favor");
+                        }
+                        else{
+                            suma=parseFloat(x) + parseFloat(y);
+                            alert(suma);
+                        }
+
+                        document.getElementById(sumando).innerHTML=text;
+                }
+            </script>
+</body>
+</html>
